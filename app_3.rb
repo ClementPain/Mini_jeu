@@ -16,7 +16,11 @@ puts
 print "Saisissez le nom de votre chevalier servant : "
 name_player = gets.chomp
 
-my_game = Game.new(name_player, 10)
+nb_ennemies = 10 #valeur par défault
+# print "Combien d'ennemis voulez-vous combattre ? (minimum 4) : "
+# nb_ennemies = gets.chomp.to_i
+
+my_game = Game.new(name_player, nb_ennemies)
 puts
 
 # tant que le jeu continue
